@@ -1,0 +1,29 @@
+###
+GET http://localhost:3001/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsIm5hbWUiOiJ0ZXN0IG5hbWUiLCJlbWFpbCI6InRlc3RAbWFpbCIsImNyZWF0ZWRBdCI6IjIwMjItMDYtMDJUMDA6MzU6MzEuNzQ5WiIsInVwZGF0ZWRBdCI6IjIwMjItMDYtMDJUMDA6MzU6MzEuNzQ5WiIsImlhdCI6MTY1NDEzMDE3MCwiZXhwIjoxNjU0MzAyOTcwfQ.cd7IAnHAU6kUjxFrQzQWojsm71L6-xtQD4p4Na_VhiM
+
+###
+GET http://localhost:3001/users/1
+
+###
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name": "test name",
+    "email": "test email",
+    "password": "password"
+}
+
+###
+PUT http://localhost:3001/users/1
+Content-Type: application/json
+
+{
+    "name": "test name",
+    "body": "test body1"
+}
+
+###
+DELETE http://localhost:3001/users/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwibmFtZSI6bnVsbCwiZW1haWwiOiJ0ZXN0QG1haWwiLCJjcmVhdGVkQXQiOiIyMDIyLTA2LTAxVDIyOjI1OjAyLjA2OVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTA2LTAxVDIyOjI1OjAyLjA2OVoiLCJpYXQiOjE2NTQxMjU5OTcsImV4cCI6MTY1NDI5ODc5N30.WCuxvYXIbyRMrxn4gT81Sy1L4qvkt1FtJ2GeHm5qKG8

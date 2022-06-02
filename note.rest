@@ -1,0 +1,27 @@
+###
+GET http://localhost:3000/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsIm5hbWUiOiJ0ZXN0IG5hbWUiLCJlbWFpbCI6InRlc3RAbWFpbCIsImNyZWF0ZWRBdCI6IjIwMjItMDYtMDJUMDA6MzU6MzEuNzQ5WiIsInVwZGF0ZWRBdCI6IjIwMjItMDYtMDJUMDA6MzU6MzEuNzQ5WiIsImlhdCI6MTY1NDEzMDE3MCwiZXhwIjoxNjU0MzAyOTcwfQ.cd7IAnHAU6kUjxFrQzQWojsm71L6-xtQD4p4Na_VhiM
+
+###
+GET http://localhost:3000/2
+
+###
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+    "title": "test title",
+    "body": "test body"
+}
+
+###
+PUT http://localhost:3000/2
+Content-Type: application/json
+
+{
+    "title": "test title1",
+    "body": "test body1"
+}
+
+###
+DELETE http://localhost:3000/1
